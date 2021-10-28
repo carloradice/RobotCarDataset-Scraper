@@ -7,7 +7,7 @@ lines = original.readlines()
 
 for line in lines:
     line = line.split(',')
-    dictionary = ['stereo_centre', 'mono_left', 'mono_right', 'mono_rear', 'lms_rear']
+    dictionary = ['stereo_centre', 'mono_left', 'mono_right', 'mono_rear', 'lms_rear', 'lms_front', 'ldmrs', 'gps']
     to_remove = []
     for s in line:
         for i in dictionary:
@@ -20,7 +20,7 @@ for line in lines:
         if not index == len(line) - 1:
             formatted = formatted + i + ','
         else:
-            formatted = formatted + i
+            formatted = formatted + i + '\n'
     new.write(formatted)
 
 new.close()

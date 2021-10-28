@@ -37,9 +37,9 @@ default_chunks_per_period = 1000
 default_chunk_length = 1 * 1024
 
 # download errors handling params
-default_relogin_duration = 10 * 60
+default_relogin_duration = 1 * 60
 default_nb_tries_reconnection = 5
-default_reconnection_duration = 10 * 60
+default_reconnection_duration = 1 * 60
 
 
 class Datasets:
